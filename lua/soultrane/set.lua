@@ -4,6 +4,7 @@ vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = true
 
 vim.o.background = 'dark'
+vim.opt.termguicolors = true
 
 -- Make line numbers default
 vim.opt.number = true
@@ -30,6 +31,8 @@ vim.opt.undofile = true
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+vim.opt.hlsearch = true
+vim.opt.incsearch = true
 
 -- Keep signcolumn on by default
 vim.opt.signcolumn = 'yes'
