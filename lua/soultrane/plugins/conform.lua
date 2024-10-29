@@ -1,3 +1,14 @@
+-- vim.api.nvim_create_autocmd('BufWritePre', {
+--   pattern = { '*.ts', '*.tsx', '*.js', '*.jsx' },
+--   callback = function()
+--     vim.lsp.buf.code_action {
+--       ---@diagnostic disable-next-line: missing-fields
+--       context = { only = { 'source.organizeImports' } },
+--       apply = true,
+--     }
+--   end,
+-- })
+
 return {
   'stevearc/conform.nvim',
   event = { 'BufWritePre' },
@@ -40,9 +51,9 @@ return {
       typescriptreact = { 'prettierd', 'prettier', 'deno_fmt', stop_after_first = true },
       css = { 'prettierd', 'prettier', stop_after_first = true },
       html = { 'prettierd', 'prettier', stop_after_first = true },
-      json = { 'prettierd', 'prettier', stop_after_first = true },
+      json = { 'prettierd', 'prettier', 'deno_fmt', stop_after_first = true },
       yaml = { 'prettierd', 'prettier', stop_after_first = true },
-      markdown = { 'prettierd', 'prettier', stop_after_first = true },
+      markdown = { 'prettierd', 'prettier', 'deno_fmt', stop_after_first = true },
       twig = { 'twigcs' },
       ['*'] = { 'cspell' },
     },

@@ -3,6 +3,10 @@ vim.g.maplocalleader = ' '
 
 vim.g.have_nerd_font = true
 
+vim.g.markdown_fenced_languages = {
+  'ts=typescript',
+}
+
 vim.o.background = 'dark'
 vim.opt.termguicolors = true
 
@@ -19,8 +23,8 @@ vim.opt.showmode = false
 -- Enable break indent
 vim.opt.breakindent = true
 vim.opt.smartindent = true
+vim.opt.autoindent = true
 
-vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
